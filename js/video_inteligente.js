@@ -20,7 +20,7 @@ export default function video() {
     });
   };
 
-  const observer = new IntersectionObserver(callback, { threshold: 0.6 });
+  const observer = new IntersectionObserver(callback, { threshold: 0.7 });
 
   $videos.forEach((el) => observer.observe(el));
 }

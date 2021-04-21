@@ -52,7 +52,7 @@
             <a href="#seccion11" data-scroll-spy>Sorteo Digital</a>
             <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
             <a href="#seccion13" data-scroll-spy>Video inteligente</a>
-            <a href="#seccion14" data-scroll-spy>seccion 14</a>
+            <a href="#seccion14" data-scroll-spy>Validaciones de formulario</a>
             <a href="#seccion15" data-scroll-spy>seccion 15</a>
         </nav>
     </aside>
@@ -206,7 +206,21 @@
             <video  src="assets/Calico.mp4" controls data-smart-video></video>
         </section>
         <section id="seccion14" class="section" data-scroll-spy>
-            <h2>Sección 14</h2>
+            <h2>Validaciones de formulario</h2>
+            <form class="contact-form" autocomplete="off" action="https://formsubmit.co/ramirezcristian181@gmail.com" method="POST" target="_blank"> 
+                <legend>Envíanos tus comentarios</legend>
+                <input type="text" name="name" placeholder="Escribe tu nombre" title="Nombre solo acepta letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                <input type="email" name="email" placeholder="Escribe tu email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Email incorrecto" required>
+                <input type="text" name="subject" placeholder="Asunto" title="El asunto es requerido" required>
+                <textarea name="comments" cols="30" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" title="Tu comentario no puede pasar los 255 caracteres" required></textarea>
+                <input type="submit">
+                <div class="contact-form-loader none ">
+                    <img src="assets/oval.svg" alt="cargando" >
+                </div>
+                <div class="contact-form-response none">
+                    <p>Los datos han sido enviados</p>
+                </div>
+            </form>
         </section>
         <section id="seccion15" class="section" data-scroll-spy>
             <h2>Sección 15</h2>

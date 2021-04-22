@@ -11,8 +11,7 @@
 
     <!-- meta -->
     <title>API DOM</title>
-    <meta name="description"
-        content="Práctica utilizando el API del DOM en JavaScript">
+    <meta name="description" content="Práctica utilizando el API del DOM en JavaScript">
     <link rel="canonical" href="https://cristianramirez5.github.io/ejercicios-dom">
     <link rel="favicon" href="https://cristianramirez5.github.io/ejercicios-dom/assets/favicon.png">
     <link rel="apple-touch-icon" href="https://cristianramirez5.github.io/ejercicios-dom/assets/favicon.png">
@@ -20,9 +19,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:title" name="twitter:title" content="Práctica DOM JavaScript">
-    <meta property="og:image" name="twitter:image" content="https://cristianramirez5.github.io/ejercicios-dom/assets/portada.png">
+    <meta property="og:image" name="twitter:image"
+        content="https://cristianramirez5.github.io/ejercicios-dom/assets/portada.png">
     <meta property="og:url" name="twitter:url" content="https://cristianramirez5.github.io/ejercicios-dom">
-    <meta property="og:description" name="twitter:description" content="Práctica utilizando el API del DOM en JavaScript">
+    <meta property="og:description" name="twitter:description"
+        content="Práctica utilizando el API del DOM en JavaScript">
 </head>
 
 <body data-dark>
@@ -53,7 +54,7 @@
             <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
             <a href="#seccion13" data-scroll-spy>Video inteligente</a>
             <a href="#seccion14" data-scroll-spy>Validaciones de formulario</a>
-            <a href="#seccion15" data-scroll-spy>seccion 15</a>
+            <a href="#seccion15" data-scroll-spy>Narrador</a>
         </nav>
     </aside>
 
@@ -68,6 +69,7 @@
         </section>
         <section id="seccion2" class="section" data-scroll-spy>
             <h2>Eventos del Teclado </h2>
+            <p>(presiona las flechas &uarr; &rarr; &darr; &larr; )</p>
             <article class="stage">
                 <div class="ball"></div>
             </article>
@@ -78,6 +80,7 @@
         </section>
         <section id="seccion4" class="section" data-scroll-spy>
             <h2>Responsive con JavaScript</h2>
+            <p>Estos elementos se cargan dependiendo del dispositivo, si es smarphone se muestran enlaces</p>
             <div id="youtube"></div>
             <div id="gmaps"></div>
         </section>
@@ -201,21 +204,29 @@
         </section>
         <section id="seccion13" class="section" data-scroll-spy>
             <h2>Video inteligente</h2>
-            <video  src="assets/Leopard.mp4" controls data-smart-video></video>
+            <p>El video se va a reproducir si se encuentra visible en la ventana y se pausará si no es visible o si se cambia de pestaña.</p>
+            <video src="assets/Leopard.mp4" controls data-smart-video></video>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <video  src="assets/Calico.mp4" controls data-smart-video></video>
+            <video src="assets/Calico.mp4" controls data-smart-video></video>
         </section>
         <section id="seccion14" class="section" data-scroll-spy>
             <h2>Validaciones de formulario</h2>
-            <form class="contact-form" autocomplete="off" action="https://formsubmit.co/ramirezcristian181@gmail.com" method="POST" target="_blank"> 
+            <form class="contact-form" autocomplete="off" action="https://formsubmit.co/ramirezcristian181@gmail.com"
+                method="POST" target="_blank">
                 <legend>Envíanos tus comentarios</legend>
-                <input type="text" name="name" placeholder="Escribe tu nombre" title="Nombre solo acepta letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
-                <input type="email" name="email" placeholder="Escribe tu email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Email incorrecto" required>
+                <input type="text" name="name" placeholder="Escribe tu nombre"
+                    title="Nombre solo acepta letras y espacios en blanco" required
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                <input type="email" name="email" placeholder="Escribe tu email"
+                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                    title="Email incorrecto" required>
                 <input type="text" name="subject" placeholder="Asunto" title="El asunto es requerido" required>
-                <textarea name="comments" cols="30" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" title="Tu comentario no puede pasar los 255 caracteres" required></textarea>
+                <textarea name="comments" cols="30" rows="5" placeholder="Escribe tus comentarios"
+                    data-pattern="^.{1,255}$" title="Tu comentario no puede pasar los 255 caracteres"
+                    required></textarea>
                 <input type="submit">
                 <div class="contact-form-loader none ">
-                    <img src="assets/oval.svg" alt="cargando" >
+                    <img src="assets/oval.svg" alt="cargando">
                 </div>
                 <div class="contact-form-response none">
                     <p>Los datos han sido enviados</p>
@@ -223,7 +234,14 @@
             </form>
         </section>
         <section id="seccion15" class="section" data-scroll-spy>
-            <h2>Sección 15</h2>
+            <h2>Narrador</h2>
+            <select class="select-narrador">
+                <option value="" >--Selecciona una voz</option>
+            </select>
+            <br><br>
+            <textarea name="texto" cols="30" rows="10" class="textarea-narrador" placeholder="Ingresa texto para leerlo"></textarea>
+            <br><br>
+            <button class="btn-narrador">Leer</button>
         </section>
 
         <script src="js/index_dom.js" type="module"></script>
